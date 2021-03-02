@@ -1,0 +1,23 @@
+﻿@model SitefinityWebApp.Mvc.Models.ImageGallery.ImageGalleryViewModel
+<div class="composition">
+    <img srcset="@Model.ImageUrl1 300w, @Model.ImageLargeUrl1 1000w"
+         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+         alt="Photo 1"
+         class="composition__photo composition__photo--p1"
+         src="@Model.ImageLargeUrl1">
+    <img srcset="@Model.ImageUrl2 300w, @Model.ImageLargeUrl2 1000w"
+         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+         alt="Photo 2"
+         class="composition__photo composition__photo--p2"
+         src="@Model.ImageLargeUrl2">
+    <img srcset="@Model.ImageUrl3 300w, @Model.ImageLargeUrl3 1000w"
+         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+         alt="Photo 3"
+         class="composition__photo composition__photo--p3"
+         src="@Model.ImageLargeUrl3">
+    <!--
+    <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+    <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+    <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+    -->
+</div>
